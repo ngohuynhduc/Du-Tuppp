@@ -1,0 +1,32 @@
+.home {
+  background-color: $general-background;
+  max-width: 82%;
+  position: sticky;
+  z-index: 10;
+  top: 50px;
+  .list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    &__video {
+      margin-bottom: 20px;
+      &-img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      &-title {
+        display: flex;
+        margin-top: 7px;
+      }
+    }
+  }
+}
+.style-sticky {
+  position: sticky;
+  top: 60px;
+  z-index: 1000;
+  background-color: white;
+  opacity: 0.95;
+  border-top: 1px solid $searchbox-border-legacy-color;
+  border-bottom: 1px solid $searchbox-border-legacy-color;
+}

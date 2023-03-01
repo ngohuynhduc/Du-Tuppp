@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+@import 'reset';
+
+@import 'variable';
+
+@import './screens/home';
+
+@import './screens/result';
+
+@import './layout/sidebar';
+
+@import './screens/watch.scss/watch';
+
+@import './layout/header';
+
+@import './screens/filterBar';
+
+@import './duration';
+
+@import './moreOptions';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+.main-container {
+  display: flex;
+}
+
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.al-center {
+  align-items: center;
+}

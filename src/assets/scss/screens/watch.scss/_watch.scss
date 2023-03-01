@@ -1,0 +1,170 @@
+// start layout
+.layout-center {
+  margin: 0 auto;
+}
+.style-links {
+  text-decoration: none;
+  color: $primary-title-color;
+}
+.style-img {
+  height: 95px;
+  object-fit: cover;
+}
+.padding-24 {
+  padding: 24px 24px 0 0;
+}
+.margin-center {
+  align-items: center;
+}
+.flex-inline {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+.hidden-more {
+  display: -webkit-box;
+  line-height: 1.3;
+  -webkit-line-clamp: 3; /* số dòng hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.view-count {
+  &::after {
+    content: '•';
+    margin: 0 4px;
+  }
+}
+.watch {
+  &__drawer {
+    height: 100%;
+    padding-top: 10px;
+  }
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  background-color: $general-background;
+  &__left {
+    width: 60%;
+    &-content {
+      width: 100%;
+      height: 455px;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    padding: 20px 0 8px;
+    &__title {
+      &-tab {
+        color: #065fd4;
+        font-size: 0.8rem;
+      }
+      &-music {
+        font-size: 1.1rem;
+        color: $primary-title-color;
+        padding-top: 5px;
+        line-height: 1.5rem;
+      }
+    }
+    &__buttons {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      padding-top: 5px;
+      justify-content: space-between;
+      &-view {
+        color: $secondary-color;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  &__right {
+    width: 30%;
+    padding-top: 24px;
+  }
+  &__channel {
+    &-btn {
+      margin-left: 58px;
+      border: none;
+      background-color: $general-background;
+      cursor: pointer;
+      color: $secondary-color;
+      font-size: 0.85rem;
+    }
+    &__user {
+      margin-left: 10px;
+      &-name {
+        font-size: 0.88rem;
+        color: $primary-title-color;
+      }
+      &-subscribe {
+        font-size: 0.75rem;
+        color: $secondary-color;
+        margin: 0 4px 0 0;
+        margin-top: 5px;
+      }
+    }
+    &-text {
+      margin-left: 58px;
+      margin-top: 20px;
+      margin-right: 5px;
+      padding: 0 0 16px;
+      font-size: 0.88rem;
+      line-height: 1rem;
+      color: $primary-color;
+      white-space: pre-line;
+    }
+  }
+  &__comments {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+    &-count {
+      font-size: 1rem;
+      color: $primary-color;
+    }
+  }
+}
+.video {
+  display: flex;
+  margin-bottom: 20px;
+  &__title {
+    position: relative;
+    &:hover .more-options {
+      visibility: visible;
+    }
+    padding-left: 7px;
+    line-height: 1rem;
+    &-music {
+      color: $primary-color;
+      font-size: 0.86rem;
+      padding-right: 10px;
+      margin: 0 0 4px;
+      max-height: 40px;
+      overflow: hidden;
+      line-height: 1.2rem;
+      font-weight: 600;
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &-author {
+      font-size: 0.75rem;
+      color: $secondary-color;
+    }
+    &-view {
+      font-size: 0.75rem;
+      color: $secondary-color;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

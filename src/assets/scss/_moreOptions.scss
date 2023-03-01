@@ -1,0 +1,11 @@
+.more-options {
+  position: absolute;
+  right: 0;
+  color: $primary-color;
+  visibility: hidden;
+  font-weight: 100;
+  &__title {
+    margin-left: 10px;
+    z-index: 100;
+  }
+}
